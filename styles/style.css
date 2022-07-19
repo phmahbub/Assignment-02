@@ -142,3 +142,54 @@
 /* --------------------------------
             Footer 
  ----------------------------------*/
+ .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0b0c;
+   
+    height: 50vh;
+    }
+.footer .title h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: wheat;
+}
+
+
+.menue-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 0.5px solid rgb(48, 47, 47);
+    margin-top: 20px;
+}
+.menue-list{
+    display: flex;
+}
+.menue-list li{
+    list-style: none;
+    margin: 0 15px;
+}
+.menue-list li a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+.social-links{
+    padding-top: 20px;
+}
+.social-links a{
+    margin:10px;
+    color: tomato;
+}
+
