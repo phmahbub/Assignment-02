@@ -112,48 +112,45 @@
 
 
  /*-------- Players-blog ------------*/
- .player-blog{
+ .Groups{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
  }
- .players{
+ .Group{
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
     margin-bottom: 30px;
     box-shadow: 0 0 5px 7px rgb(252, 240, 240);
     border-radius: 9px;
     padding: 7px;
  }
- .player-image img{
-    width: 100%;
+ .Group p{
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    background-color: rgb(253, 236, 252);
+ }
+ .Team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: 20px;
+    border: 0.5px solid rgb(246, 219, 219);
+ }
+
+ .Team img{
+    width: 80%;
+    height: auto;
     border-radius: 5px;
  }
-        /* Elipsis */
- .transfer-news h2{
-    font-size: 22px;
-    font-weight: 600;
-    padding: 20px 0px;
-    white-space: nowrap;
-    width: 250px;
-    overflow: hidden;
-    text-overflow: ellipsis;
- }
- .transfer-news h2:hover{
-    overflow: visible;
-    white-space: normal;
- }
-        /* Elipsis */
-
- 
- .rating .fa-solid{
-    color:rgb(94, 92, 92);
-    margin-right: 10px ;
- }
- .rating span{
-    color:rgb(34, 33, 33);
-    margin-right: 50px ;
- }
- /*-------- Players-blog ------------*/
-
+ .Team h2{
+   font-size: 24px;
+   color: #3A3A3A;
+   font-family: 'Poppins', sans-serif;
+}
 
 /* --------------------------------
             Footer 
