@@ -213,3 +213,82 @@
     color: tomato;
 }
 /* -------- Social Links ----------*/
+
+
+/* --------------------------------
+           @media Query 
+----------------------------------*/
+/* Tablet , maximum width 961px */
+
+@media screen and (max-width:961px)
+{
+  
+   .banner{
+      margin: 20px auto;
+   }
+   .banner-text h1{
+      font-size: 2em;
+      line-height:40px;
+   }
+   .banner-image .cr7{
+      position: relative;
+      right: 60px;
+      height: auto;
+      width: 60vw;
+   }
+  .blog-menue{
+     grid-template-columns: repeat(1, 1fr);
+  }
+  .menue{
+     width: 92%;
+     height: 100px;
+     flex-direction: row;
+     border-radius: 10px;
+     margin: 20px;
+  }
+  .Groups{
+     grid-template-columns: repeat(2, 1fr);
+  
+  }
+  .menue-items{
+    
+     width: 160px;
+     height: 50px;
+     border-radius: 5px;
+     
+  }
+   .menue-list{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   }
+   .menue-items a{
+      font-size: 16px;
+   }
+
+}
+
+
+/* Mobile , maximum width 600px*/
+@media screen and (max-width:600px)
+{
+   .blog-menue{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .menue{
+      width: 70%;
+      height: 300px;
+      flex-direction: column;
+   }
+   .Groups{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .menue-list{
+      flex-direction: column;
+   }
+   .banner{
+      grid-template-columns: repeat(1,1fr);
+   }
+ 
+}
