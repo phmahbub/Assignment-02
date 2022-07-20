@@ -33,28 +33,36 @@
    font-family: 'Poppins', sans-serif;
    line-height:85px;
 }
+
+/* ------------------ Button Animation --------------------- */
 .button{
    width: 160px;
    height: 44px;
-   background: #FF0063;
+   background: #66BFBF;;
    border-radius: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 26px;
+   transition: background 2s;
 }
 .button-text{
-   /* background: #E02C6D; */
-   color: wheat;
+   color: black;
    font-family: 'Poppins', sans-serif;
    font-weight: 700;
    font-size: 18px;
    text-decoration: none;
 }
+#button{
+   margin: auto;
+   visibility: hidden;
+}
+.button:hover{
+   background: #FF0063;
+   
+}
 .banner-image{
   position: relative;
-  /* align-self: center; */
-  /* justify-self:left; */
 }
 .banner-image .cr7{
   position: relative;
@@ -128,7 +136,7 @@
    width: 100%;
    border-radius: 5px;
 }
-       /* Elipsis */
+ /* ------------ Elipsis ----------------- */
 .transfer-news h2{
    font-size: 22px;
    font-weight: 600;
@@ -142,7 +150,7 @@
    overflow: visible;
    white-space: normal;
 }
-       /* Elipsis */
+       /* ----------- Elipsis --------------*/
 
 
 .rating .fa-solid{
@@ -153,23 +161,16 @@
    color:rgb(34, 33, 33);
    margin-right: 80px ;
 }
-.invisible-button{
-   display: flex;
-   justify-content: flex-end;
-   visibility: hidden;
-}
-.invisible-button a{
-   color: red;
-   padding-right: 100px;
-   padding-bottom: 100px;
-}
-/*-------- Players-blog ------------*/
+
+
+
 
 
 /* --------------------------------
            Footer 
 ----------------------------------*/
 .footer{
+   margin-top: 50px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -183,6 +184,7 @@
    font-size: 30px;
    color: wheat;
 }
+
 /* -------- Menue-Bar ----------*/
 .menue-bar{
    
@@ -210,7 +212,7 @@
    font-size: 16px;
    color: #928383;
 }
-/* -------- Menue-Bar ----------*/
+
 
 
 /* -------- Social Links ----------*/
@@ -221,16 +223,16 @@
    margin:10px;
    color: tomato;
 }
-/* -------- Social Links ----------*/
+
 
 
 
 /* --------------------------------
            @media Query 
 ----------------------------------*/
-/* Tablet , maximum width 961px */
+/* Tablet , maximum width 992px */
 
-@media screen and (max-width:961px)
+@media screen and (max-width:992px)
 {
   
    .banner{
@@ -260,7 +262,7 @@
      grid-template-columns: repeat(2, 1fr);
   
   }
-  .invisible-button{
+  #button{
    visibility: visible;
 }
   .menue-items{
@@ -300,7 +302,7 @@
    .player-blog{
       grid-template-columns: repeat(1, 1fr);
    }
-   .invisible-button{
+   #button{
       visibility: hidden;
    }
    .menue-list{

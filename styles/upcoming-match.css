@@ -13,7 +13,7 @@
            Header-section 
 ----------------------------------*/
 .banner{
-   background: #3a3434;;
+   background:#3a3434;
    margin: 50px auto;
    border-radius: 25px;
    display: grid;
@@ -34,14 +34,15 @@
    line-height:85px;
 }
 .button{
-   width: 175px;
+   width: 160px;
    height: 44px;
-   background: rgb(49, 216, 180);
+   background: #66BFBF;;
    border-radius: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 26px;
+   transition: background 2s;
 }
 .button-text{
    color: black;
@@ -50,12 +51,18 @@
    font-size: 18px;
    text-decoration: none;
 }
+.button:hover{
+   background: #FF0063;
+   
+}
+.banner-image{
+  position: relative;
+}
 .banner-image .cr7{
   position: relative;
   height: 100%;
   width: 500px;
 }
-
  /* --------------------------------
             Blog-section 
  ----------------------------------*/
@@ -170,7 +177,7 @@
     font-size: 30px;
     color: wheat;
 }
-/* -------- Menue-Bar ----------*/
+/* -------- Footer-Menue ----------*/
 .menue-bar{
     display: flex;
     justify-content: space-between;
@@ -197,7 +204,6 @@
     font-size: 16px;
     color: #3A3A3A;
 }
-/* -------- Menue-Bar ----------*/
 
 
 /* -------- Social Links ----------*/
@@ -208,16 +214,16 @@
     margin:10px;
     color: tomato;
 }
-/* -------- Social Links ----------*/
+
 
 
 
 /* --------------------------------
            @media Query 
 ----------------------------------*/
-/* Tablet , maximum width 961px */
+/* Tablet , maximum width 992px */
 
-@media screen and (max-width:961px)
+@media screen and (max-width:992px)
 {
   
    .banner{
