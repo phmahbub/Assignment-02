@@ -170,7 +170,7 @@
    align-items: center;
    justify-content: center;
    background-color: #3a3434;
-   height: 300px;
+   height: 400px;
 }
 .footer .title h1{
    font-family: 'Poppins', sans-serif;
@@ -223,9 +223,9 @@
 /* --------------------------------
            @media Query 
 ----------------------------------*/
-/* Tablet */
+/* Tablet , maximum width 961px*/
 
-@media screen and (max-width:800px){
+@media screen and (max-width:961px){
   
   .blog-menue{
      display: grid;
@@ -306,4 +306,27 @@
    height: auto;
    width: 60vw;
  }
+}
+
+
+/* Mobile , maximum width 600px*/
+@media screen and (max-width:961px){
+   .blog-menue{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .menue{
+      width: 70%;
+      height: 300px;
+      flex-direction: column;
+   }
+   .player-blog{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .menue-list{
+      flex-direction: column;
+ }
+ .banner{
+    grid-template-columns: repeat(1,1fr);
+ }
+ 
 }
