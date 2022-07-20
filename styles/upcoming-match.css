@@ -5,19 +5,15 @@
    box-sizing: border-box;
    font-size: 16px;
    font-weight: 400;
-   /* font-family: 'EB Garamond', serif; */
    font-family: 'Gentium Book Plus', serif;
-   /* font-family: 'Inter', sans-serif;
-   font-family: 'Poppins', sans-serif;
-   font-family: 'Raleway', sans-serif;
-   font-family: 'Roboto Serif', serif; */
+   
 }
 
 /* --------------------------------
            Header-section 
 ----------------------------------*/
 .banner{
-   background: #0a0a0a;
+   background: #3a3434;;
    margin: 50px auto;
    border-radius: 25px;
    display: grid;
@@ -48,17 +44,11 @@
    margin-top: 26px;
 }
 .button-text{
-   /* background: #E02C6D; */
    color: black;
    font-family: 'Poppins', sans-serif;
    font-weight: 700;
    font-size: 18px;
    text-decoration: none;
-}
-.banner-image{
-  position: relative;
-  /* align-self: center; */
-  /* justify-self:left; */
 }
 .banner-image .cr7{
   position: relative;
@@ -80,39 +70,38 @@
     border-radius: 25px;
  }
  .menue{
-    width: 270px;
-    height: 400px;
-    background-color: #0a0a0a;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr);
-    align-items: center;
-    justify-items: center; */
-    border-radius: 10px;
- }
- .menue-items{
-    background-color: white;
-    width: 200px;
-    height: 60px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- .menue-items a{
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    font-weight: 700;
- }
- .menue-items:hover,.menue-items a:hover{
-    background-color: tomato;
-    color: white;
- }
+   width: 270px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   box-shadow: 0 0 5px 7px rgb(252, 240, 240);
+   border-radius: 10px;
+}
+.menue-items{
+   background-color: #EEF2FF;
+   width: 200px;
+   height: 60px;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#upcoming-match{
+   background-color: #66BFBF;
+}
+.menue-items a{
+   text-align: center;
+   text-decoration: none;
+   color: black;
+   font-size: 24px;
+   font-weight: 700;
+}
+.menue-items:hover, #upcoming-match:hover{
+   background-color: tomato;
+   color: white;
+}
  /*-------- blog-menue ------------*/
 
 
@@ -134,7 +123,7 @@
     font-size: 14px;
     text-align: center;
     color: #3A3A3A;
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: 4px;
     
  }
@@ -148,13 +137,11 @@
  .Team{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* justify-content: space-around; */
     align-items: center;
     justify-items: center;
     margin: 20px;
     border: 0.5px solid rgb(246, 219, 219);
  }
-
  .Team img{
     width: 100%;
     height: 80px;
@@ -222,3 +209,90 @@
     color: tomato;
 }
 /* -------- Social Links ----------*/
+
+
+
+/* --------------------------------
+           @media Query 
+----------------------------------*/
+/* Tablet , maximum width 961px */
+
+@media screen and (max-width:961px)
+{
+  
+   .banner{
+      margin: 20px auto;
+   }
+   .banner-text h1{
+      font-size: 2em;
+      line-height:40px;
+   }
+   .banner-image .cr7{
+      position: relative;
+      right: 60px;
+      height: auto;
+      width: 60vw;
+   }
+  .blog-menue{
+     grid-template-columns: repeat(1, 1fr);
+  }
+  .menue{
+     width: 92%;
+     height: 100px;
+     flex-direction: row;
+     border-radius: 10px;
+     margin: 20px;
+  }
+  .fixture{
+     grid-template-columns: repeat(2, 1fr);
+  
+  }
+  .invisible-button{
+   visibility: visible;
+}
+  .menue-items{
+    
+     width: 160px;
+     height: 50px;
+     border-radius: 5px;
+     
+  }
+   .menue-list{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   }
+   .menue-items a{
+      font-size: 16px;
+   }
+
+}
+
+
+/* Mobile , maximum width 600px*/
+@media screen and (max-width:600px)
+{
+   .banner{
+      grid-template-columns: repeat(1,1fr);
+   }
+   .blog-menue{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .menue{
+      width: 70%;
+      height: 300px;
+      flex-direction: column;
+   }
+   .fixture{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .invisible-button{
+      visibility: hidden;
+   }
+   .menue-list{
+      flex-direction: column;
+   }
+   
+ 
+}

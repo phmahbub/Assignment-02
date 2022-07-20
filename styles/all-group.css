@@ -5,19 +5,14 @@
    box-sizing: border-box;
    font-size: 16px;
    font-weight: 400;
-   /* font-family: 'EB Garamond', serif; */
    font-family: 'Gentium Book Plus', serif;
-   /* font-family: 'Inter', sans-serif;
-   font-family: 'Poppins', sans-serif;
-   font-family: 'Raleway', sans-serif;
-   font-family: 'Roboto Serif', serif; */
 }
 
 /* --------------------------------
            Header-section 
 ----------------------------------*/
 .banner{
-   background: #0a0a0a;
+   background: #3a3434;;
    margin: 50px auto;
    border-radius: 25px;
    display: grid;
@@ -48,17 +43,11 @@
    margin-top: 26px;
 }
 .button-text{
-   /* background: #E02C6D; */
    color: black;
    font-family: 'Poppins', sans-serif;
    font-weight: 700;
    font-size: 18px;
    text-decoration: none;
-}
-.banner-image{
-  position: relative;
-  /* align-self: center; */
-  /* justify-self:left; */
 }
 .banner-image .cr7{
   position: relative;
@@ -80,39 +69,38 @@
     border-radius: 25px;
  }
  .menue{
-    width: 270px;
-    height: 400px;
-    background-color: #0a0a0a;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr);
-    align-items: center;
-    justify-items: center; */
-    border-radius: 10px;
- }
- .menue-items{
-    background-color: white;
-    width: 200px;
-    height: 60px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- .menue-items a{
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    font-weight: 700;
- }
- .menue-items:hover,.menue-items a:hover{
-    background-color: tomato;
-    color: white;
- }
+   width: 270px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   box-shadow: 0 0 5px 7px rgb(252, 240, 240);
+   border-radius: 10px;
+}
+.menue-items{
+   background-color: #EEF2FF;
+   width: 200px;
+   height: 60px;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#all-group{
+   background-color: #66BFBF;
+}
+.menue-items a{
+   text-align: center;
+   text-decoration: none;
+   color: black;
+   font-size: 24px;
+   font-weight: 700;
+}
+.menue-items:hover, #blog:hover{
+   background-color: tomato;
+   color: white;
+}
  /*-------- blog-menue ------------*/
 
 
