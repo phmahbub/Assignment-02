@@ -1,66 +1,70 @@
 /* General instruction */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 400;
-    /* font-family: 'EB Garamond', serif; */
-    font-family: 'Gentium Book Plus', serif;
-    /* font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto Serif', serif; */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 16px;
+   font-weight: 400;
+   /* font-family: 'EB Garamond', serif; */
+   font-family: 'Gentium Book Plus', serif;
+   /* font-family: 'Inter', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto Serif', serif; */
 }
 
 /* --------------------------------
-            Header-section 
- ----------------------------------*/
+           Header-section 
+----------------------------------*/
 .banner{
-    background: #0a0a0a;
-    margin: 50px 100px;
-    border-radius: 25px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+   background: #0a0a0a;
+   margin: 50px auto;
+   border-radius: 25px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-items: center;
+   align-items: center;
+   width: 90vw;
+   height: 100%;
 }
 .banner-text{
-    color: white;
-    padding: 50px;
+   color: white;
+   padding: 50px;
 }
 .banner-text h1{
-    font-size: 70px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    line-height:85px;
-    
+   font-size: 4em;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   line-height:85px;
 }
 .button{
-    width: 175px;
-    height: 44px;
-    background: rgb(49, 216, 180);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 26px;
- }
- .button-text{
-    /* background: #E02C6D; */
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none;
- }
- .banner-image{
-    align-self: center;
-    justify-self:left;
-
- }
- .banner-image .cr7{
-    height: 100%;
-    width: 170%;
- }
+   width: 175px;
+   height: 44px;
+   background: rgb(49, 216, 180);
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 26px;
+}
+.button-text{
+   /* background: #E02C6D; */
+   color: black;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   font-size: 18px;
+   text-decoration: none;
+}
+.banner-image{
+  position: relative;
+  /* align-self: center; */
+  /* justify-self:left; */
+}
+.banner-image .cr7{
+  position: relative;
+  height: 100%;
+  width: 500px;
+}
 
  /* --------------------------------
             Blog-section 
@@ -71,7 +75,8 @@
  .blog-menue{
     display: grid;
     grid-template-columns: 300px 1fr;
-    margin: 50px 100px;
+    margin: 50px auto;
+    width: 90vw;
     border-radius: 25px;
  }
  .menue{
